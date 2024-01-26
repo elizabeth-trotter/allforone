@@ -1,9 +1,10 @@
 // Variables by ID
 let response = document.getElementById("response");
-let submitBtnArr = [
-    document.getElementById("submitBtnL0"), document.getElementById("submitBtnL1"), document.getElementById("submitBtnL2"), document.getElementById("submitBtnL3"), document.getElementById("submitBtnL4"),
-    document.getElementById("submitBtnL5"), document.getElementById("submitBtnL6"), document.getElementById("submitBtnL7"), document.getElementById("submitBtnL8"), document.getElementById("submitBtnL9"),
-];
+let submitBtn = document.getElementById("submitBtnL0");
+// let submitBtnArr = [
+//     document.getElementById("submitBtnL0"), document.getElementById("submitBtnL1"), document.getElementById("submitBtnL2"), document.getElementById("submitBtnL3"), document.getElementById("submitBtnL4"),
+//     document.getElementById("submitBtnL5"), document.getElementById("submitBtnL6"), document.getElementById("submitBtnL7"), document.getElementById("submitBtnL8"), document.getElementById("submitBtnL9"),
+// ];
 
 let userName = document.getElementById("userName");
 
@@ -17,6 +18,12 @@ async function SayHelloEndpoint(userName){
     fetchedData = promise;
     console.log(fetchedData);
 }
+
+submitBtn.addEventListener('click', () => {
+    SayHelloEndpoint(userName.value);
+});
+
+//Add keydown event later?
 
 // Event Listeners
 // submitBtnArr.forEach(function(button, index){
