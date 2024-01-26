@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../src/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Josefin+Slab:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>AFO: Restaurant Picker</title>
+</head>
+
+<body>
+    <header class="w-screen h-[8vh] bg-[#FFFFFF] flex">
+        <h2 class="text-black font-bold font-amatic tracking-wide text-4xl my-auto ps-5 sm:ps-10 md:ps-20">AFO: Restaurant Picker</h2>
+    </header>
+
+    <main class="w-[screen] h-[84vh] bg-[#228896] text-white px-10 sm:px-20 xl:px-50 py-14">
+        <section class="h-full flex flex-col justify-between">
+            <h1 class="font-amatic text-7xl font-bold text-center pb-5 pt-10"><span class="sm:hidden">Lvl.</span><span class="hidden sm:inline-block">Level</span> 9</h1>
+            
+            <div class="flex font-josefin font-bold">
+                <div class="mx-auto hidden xl:block">
+                    <img src="../assets/ForkKnife.png" alt="Fork icon">
+                </div>
+                <div class="mx-auto">
+                    <label class="block pb-5 text-2xl" for="userName">Enter a restaurant category:</label>
+                    <input class="text-black text-lg rounded-lg border-0 w-[230px] min-[375px]:w-[300px] sm:w-[400px]" type="text" id="userName" name="userName" maxlength="10" placeholder="" required>
+                </div>
+                <div class="mx-auto hidden xl:block">
+                    <img src="../assets/Brandy.png" alt="Drink icon">
+                </div>
+            </div>
+
+            <div id="response" class="my-10 mx-auto"></div>
+            
+            <button id="submitBtnL0" class="text-black font-bold text-2xl font-amatic tracking-widest rounded-lg bg-[#D4E589] h-[5vh] w-[230px] min-[375px]:w-[300px] sm:w-[400px] mx-auto">Submit</button>
+        </section>
+    </main>
+
+    <footer class="w-screen h-[8vh] bg-[#FFFFFF] columns-3 flex justify-center gap-20">
+        <div class="flex">
+            <a href="./L8_MagicBall.html" class="my-auto">
+                <img class="sm:hidden" src="../assets/dark-faChevronCircleLeftMobile.png" alt="Back Button">
+                <img class="hidden sm:block" src="../assets/dark-faChevronCircleLeft.png" alt="Back Button">
+            </a>
+        </div>
+        <div class="flex md:px-48">
+            <a href="../index.html" class="my-auto">
+                <img class="sm:hidden" src="../assets/dark-faHomeMobile.png" alt="Home Button">
+                <img class="hidden sm:block" src="../assets/dark-faHome.png" alt="Home Button">
+            </a>
+        </div>
+        <div class="flex">
+            <a href="../index.html" class="my-auto">
+                <img class="sm:hidden" src="../assets/dark-faChevronCircleRightMobile.png" alt="Next Button">
+                <img class="hidden sm:block" src="../assets/dark-faChevronCircleRight.png" alt="Next Button">
+            </a>
+        </div>
+    </footer>
+
+    <script src="../node_modules/flowbite/dist/flowbite.min.js"></script>
+    <script src="../scripts/app.js"></script>
+</body>
+
+</html>

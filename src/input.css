@@ -1,0 +1,13 @@
+/* Taildwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts */
+.font-amatic {
+    font-family: 'Amatic SC', sans-serif;
+}
+
+.font-josefin {
+    font-family: 'Josefin Slab', serif;
+}
