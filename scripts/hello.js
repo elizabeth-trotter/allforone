@@ -1,39 +1,32 @@
 // Variables by ID
 let response = document.getElementById("response");
-let submitBtn = document.getElementById("submitBtnL0");
-// let submitBtnArr = [
-//     document.getElementById("submitBtnL0"), document.getElementById("submitBtnL1"), document.getElementById("submitBtnL2"), document.getElementById("submitBtnL3"), document.getElementById("submitBtnL4"),
-//     document.getElementById("submitBtnL5"), document.getElementById("submitBtnL6"), document.getElementById("submitBtnL7"), document.getElementById("submitBtnL8"), document.getElementById("submitBtnL9"),
-// ];
+let submitBtn = document.getElementById("submitBtn");
 
+// Page Specific ID
 let userName = document.getElementById("userName");
 
-// JavaScript Global Variable
-let fetchedData;
-
-// API Fetch Functions
+// API Fetch Function
 async function SayHelloEndpoint(userName){
-    const data = await fetch($Z`http://localhost:5105/Hello/Hello/${userName}`);
-    const promise = await data.json();
-    fetchedData = promise;
-    console.log(fetchedData);
+    const promise = await fetch(`https://allforoneproject.azurewebsites.net/Hello/Hello/${userName}`);
+    const data = await promise.text();
+    console.log(data);
+    return data;
 }
 
-submitBtn.addEventListener('click', () => {
-    SayHelloEndpoint(userName.value);
+// Submit Button Event
+submitBtn.addEventListener('click', async () => {
+    if(userName.value){
+        let fetchedData = await SayHelloEndpoint(userName.value);
+        response.textContent = fetchedData;
+    }
 });
 
-//Add keydown event later?
-
-// Event Listeners
-// submitBtnArr.forEach(function(button, index){
-//     button.addEventListener('click', () => {
-//         switch (index){
-//             case 0:
-//                 SayHelloEndpoint(userName.value);
-//                 break;
-//             default:
-//                 break;
-//         }
-//     });
-// });
+// User Input Event
+userName.addEventListener('keydown', async (event) => {
+    if(userName.value){
+        if(event.key === "Enter"){
+            let fetchedData = await SayHelloEndpoint(event.target.value);
+            response.textContent = fetchedData;
+        }
+    }   
+});

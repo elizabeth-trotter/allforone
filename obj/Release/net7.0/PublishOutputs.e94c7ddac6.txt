@@ -1,0 +1,14 @@
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\allforone.exe
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\appsettings.Development.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\appsettings.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\package-lock.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\package.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\allforone.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\allforone.deps.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\allforone.runtimeconfig.json
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\allforone.pdb
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\Microsoft.OpenApi.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Elizabeth\Desktop\CodeStack_Projects\Level2\Week4\allforone\publish\Swashbuckle.AspNetCore.SwaggerUI.dll
