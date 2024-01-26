@@ -10,23 +10,23 @@ let userName = document.getElementById("userName");
 // JavaScript Global Variable
 let fetchedData;
 
-// Event Listeners
-submitBtnArr.forEach(function(button, index){
-    button.addEventListener('click', () => {
-        switch (index){
-            case 0:
-                SayHelloEndpoint(userName.value);
-                break;
-            default:
-                break;
-        }
-    });
-});
-
 // API Fetch Functions
-const SayHelloEndpoint = async (name) => {
-    const data = await fetch(`http://localhost:5105/Hello/Hello/${name}`);
+async function SayHelloEndpoint(userName){
+    const data = await fetch($Z`http://localhost:5105/Hello/Hello/${userName}`);
     const promise = await data.json();
     fetchedData = promise;
     console.log(fetchedData);
 }
+
+// Event Listeners
+// submitBtnArr.forEach(function(button, index){
+//     button.addEventListener('click', () => {
+//         switch (index){
+//             case 0:
+//                 SayHelloEndpoint(userName.value);
+//                 break;
+//             default:
+//                 break;
+//         }
+//     });
+// });

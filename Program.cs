@@ -1,4 +1,7 @@
 using allforone.Services.L0_Hello;
+using allforone.Services.L1_Sum;
+using allforone.Services.L2_Question;
+using allforone.Services.L3_Compare;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,6 +12,9 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddScoped<IHelloService, HelloService>();
+builder.Services.AddScoped<ISumService, SumService>();
+builder.Services.AddScoped<IQuestionService, QuestionService>();
+builder.Services.AddScoped<ICompareService, CompareService>();
 
 var app = builder.Build();
 
