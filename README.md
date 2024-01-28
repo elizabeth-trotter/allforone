@@ -1,42 +1,32 @@
 # All For One
 
-
 **Name:** Elizabeth Trotter
 
 **Project Scope:** This is the `Web API` part of a comprehensive project that consolidates former mini API endpoints challenges into a 10-page web application.
 
+> [!IMPORTANT]
+> This project is on pause and has pending to do list items before use.
 
-## Endpoints
-
-**Say Hello - Level 0**
-    - /Hello/Hello/{userName}
-
-**Adding Numbers - Level 1**
-    - /Sum/GetSum/{numOne}/{numTwo}
-
-**Asking Questions - Level 2**
-    - /Question/GetAnswers/{name}/{time}
-
-**Greater Or Less Than - Level 3**
-    - /Compare/CompareNums/{numOne}/{numTwo}
-
-**Mad Lib - Level 4**
-    - /MadLib/MadLib/{noun1}/{holiday1}/{pronoun1}/{animal1}/{exclamation1}/{color1}/{noun2}/{verb1_ing}/{bluntObject1}/{hours1}
-
-**Odd Or Even - Level 5**
-    - /OddOrEven/OddOrEven/{numOne}
-
-**Reverse String - Level 6**
-    - /ReverseItAlpha/ReverseIt/Entersequenceoflettersandornumbers{userInput}
-
-**Reverse Number - Level 7**
-    - /ReverseItNum/ReverseItNum/Enteranumberonly{userNum}
-
-**Magic 8 Ball - Level 8**
-    - /MagicBall/Generate8BallResponseToQuestion/
-
-**Restaurant Picker - Level 9**
-    - /Restaurant/ChoosePizzaSushiOrBurgers/{category}
+**My To Do's:**
+- [ ] Fix / shorten routes
+- [ ] Remove unused files
+- [ ] Finish parameter types
+- [ ] Add link
 
 
----
+<h2 align="center">API Calls & Endpoints</h2>
+
+| Description | HTTP Method | Endpoint[^1] | Parameters | Returns |
+| ------------- | :-------------: | ------------- | ------------- | :-------------: |
+| Say Hello  | `GET`  | /Hello/Hello/{userName}  | `userName` | String |
+| Adding Numbers | `GET`  | /Sum/GetSum/{numOne}/{numTwo}  | `numOne` `numTwo` | String  |
+| Asking Questions | `GET`  | /Question/GetAnswers/{name}/{time}  | `name` `time` | String  |
+| Greater Or Less Than | `GET`  | /Compare/CompareNums/{numOne}/{numTwo}  | `numOne` `numTwo` | String  |
+| Mad Lib | `GET`  | /MadLib/MadLib/{noun1}/{holiday1}/{pronoun1}/{animal1}/{exclamation1} /{color1}/{noun2}/{verb1_ing}/{object1}/{hours1}  | `noun1` `holiday1` `pronoun1` `animal1` `exclamation1` `color1` `noun2` `verb1_ing` `object1` `hours1` | String  |
+| Odd Or Even | `GET`  | /OddOrEven/OddOrEven/{numOne}  | `numOne` | String  |
+| Reverse String | `GET`  | /ReverseItAlpha/ReverseIt/Entersequenceoflettersandornumbers{userInput}  | `userInput` | String  |
+| Reverse Number | `GET`  | /ReverseItNum/ReverseItNum/Enteranumberonly{userNum}  | `userNum` | String  |
+| Magic 8 Ball | `GET`  | /MagicBall/Generate8BallResponseToQuestion/  | none | String  |
+| Restaurant Picker | `GET`  | /Restaurant/ChoosePizzaSushiOrBurgers/{category}  | `category` | String  |
+
+[^1]: All fields within { } are required to make an API call
