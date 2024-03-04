@@ -8,10 +8,12 @@
 > This project is on pause and has pending to do list items before use.
 
 **My To Do's:**
-- [ ] Fix / shorten routes
-- [ ] Remove unused files
-- [ ] Finish parameter types
-- [ ] Add link
+- [x] Remove unused files *front end was move to seperate repo*
+- [ ] API Use Documentation
+  - [x] Add description, method, endpoint, parameters, returns
+  - [x] Add footnote with required items
+  - [ ] Shorten routes
+  - [ ] Add entire link
 
 
 <h2 align="center">API Calls & Endpoints</h2>
